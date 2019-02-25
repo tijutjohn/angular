@@ -1,0 +1,19 @@
+<div class="table-wrapper-scroll-y">
+  <table class="table table-bordered table-striped table-hover table-responsive">
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col}}
+      </th>
+    </tr>
+    <tr *ngFor="let comment of comments">
+      <td>{{comment.name}}</td>
+      <td>{{comment.email}}</td>
+      <td>{{comment.body}}</td>
+  </tr>
+    <tr *ngFor="let comment of (comments)">
+      <td *ngFor="let col of columns">
+        {{comment[col]}}
+      </td>
+    </tr>
+  </table>
+</div>

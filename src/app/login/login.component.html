@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./login.component.scss"></script>
+</head>
+
+<body>
+  <h2>User Login</h2>
+  <form>
+    <div class="container divStyle">
+      <input type="text" placeholder="Enter Username" [(ngModel)]="userName" required name="uname">
+      <input type="password" placeholder="Enter Password" [(ngModel)]="password" required name="pwd">
+      <button type="button" (click)="onLoginClick()">Login</button>
+    </div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<div class="table-wrapper-scroll-y">
+  <table class="table table-bordered table-striped table-hover table-responsive">
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col}}
+      </th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>{{post.title}}</td>
+      <td>{{post.body}}</td>
+    </tr>
+  </table>
+</div>
